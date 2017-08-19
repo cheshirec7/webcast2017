@@ -1,0 +1,203 @@
+.breadcrumb {
+    display: none;
+}
+
+th {
+    background-color: #999;
+    color: #fff;
+}
+
+.radio-inline input[type=radio], .radio input[type=radio] {
+    margin-left: -15px;
+}
+
+.btn-timeentry, #btn-pull {
+    width: 100%;
+}
+
+.table-bordered > thead > tr > td, .table-bordered > thead > tr > th {
+    border-bottom-width: 0;
+}
+
+#timeentry-container {
+    max-width: 400px;
+    margin: -20px auto 0;
+    padding: 0;
+}
+
+#timeentry-container .title {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#times-display-form-racer-results-body td + td,
+#times-display-form-racer-results-body td + td + td {
+    text-align: center;
+}
+
+#racerno-label {
+    float: left;
+    margin-bottom: 6px;
+}
+
+.racerno-text {
+    color: #3366ff;
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: -1px;
+    margin-left: 8px;
+}
+
+.modal-header {
+    background-color: #006DCC;
+    background-image: linear-gradient(to bottom, #8ABAF2, #0B61D5);
+    background-repeat: repeat-x;
+    border-bottom: 1px solid #333333;
+    color: #FFFFFF;
+    padding: 3px 6px 3px 10px;
+    font-weight: bold;
+}
+
+#modal-select-racer-number .modal-dialog {
+    width: 220px;
+    margin: 90px auto 20px;
+}
+
+#modal-select-racer-number .modal-footer {
+    text-align: center;
+}
+
+#modal-select-racer-number-invalid-racer-number-msg {
+    text-align: center;
+    color: #ff0000;
+    margin: 10px 0;
+}
+
+#modal-select-racer-number-keypad .btn {
+    color: #3366ff;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+}
+
+#modal-select-racer-number-keypad, #keypad-hour-table, #keypad-min-table {
+    border-spacing: 9px;
+    border-collapse: separate;
+    width: 100%;
+}
+
+#modal-select-racer-number-control {
+    margin-top: 8px;
+}
+
+#keypad-hour-table .btn, #keypad-min-table .btn {
+    color: #3366ff;
+}
+
+#keypad-hour-table .btn {
+    width: 50px;
+    height: 50px;
+}
+
+#time-entry-form-finish-order-select {
+    width: 70px;
+    margin: 0 auto;
+}
+
+.width80 {
+    width: 80px;
+}
+
+#pull-racer-form-btn-delete {
+    margin-bottom: 5px;
+}
+
+#modal-minutes .modal-dialog {
+    width: 350px;
+    margin: 5px auto 20px;
+}
+
+#modal-hour .modal-dialog {
+    width: 275px;
+    margin: 140px auto 20px;
+}
+
+#time-entry-form .btn:focus,
+#time-entry-form .btn:active:focus,
+#time-entry-form .btn.active:focus,
+#time-entry-form .btn.focus,
+#time-entry-form .btn:active.focus,
+#time-entry-form .btn.active.focus {
+    outline: none !important;
+    outline-offset: 0 !important;
+}
+
+#time-entry-form-table-time-entry {
+    margin: 0 auto;
+}
+
+#time-entry-form-btn-hour, #time-entry-form-btn-min {
+    color: #3366ff;
+    width: 60px;
+}
+
+#time-entry-form-ampm {
+    padding-left: 5px;
+}
+
+#modal-select-racer-number-keypad {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .main-footer {
+        background: #ecf0f5;
+        color: #ecf0f5;
+        border-top: none;
+    }
+
+    .main-footer a {
+        color: #ecf0f5;
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    #timeentry-container {
+        margin-top: 0;
+        padding: 15px;
+        background-color: #fff;
+        max-width: 450px;
+        border-radius: 5px;
+        box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .25);
+    }
+
+    #timeentry-container .table {
+        margin-bottom: 0;
+    }
+
+    #modal-minutes .modal-dialog {
+        margin: 250px 0 20px 0;
+        left: calc(50% - 55px);
+    }
+
+    #modal-hour .modal-dialog {
+        margin: 250px 0 20px 0;
+        left: calc(50%);
+    }
+
+    /*.table .btn.btn-default.btn-sm{font-size:13px;}*/
+    #pull-racer-form-btn-delete, #pull-racer-form-btn-cancel {
+        margin: 0;
+    }
+
+    #modal-select-racer-number-keypad {
+        display: block;
+    }
+
+    #modal-select-racer-number .modal-dialog {
+        margin: 90px 0 20px 0;
+        left: calc(50%);
+    }
+}
