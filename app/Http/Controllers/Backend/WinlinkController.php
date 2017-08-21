@@ -13,6 +13,7 @@ use Illuminate\Http\Request;
 use App\Models\Pull;
 use App\Models\ImportLog;
 use DateTime;
+use Illuminate\Support\Facades\Cache;
 
 class WinlinkController extends Controller
 {
@@ -437,7 +438,7 @@ class WinlinkController extends Controller
 
         $this->checkpoints->updateInOutAggregates();
         $this->checkpoints->updatePullAggregate();
-
+        Cache::flush();
         return back()->withFlashSuccess('[' . $importtime->format('Y-m-d H:i:s') . '] Import successful: ' . $info);
     }
 
